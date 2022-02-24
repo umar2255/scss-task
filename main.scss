@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+
+}
+/* Structure containers */
+.wrapper{
+    flex: 1 0 auto;/* This tells the container to take up the rest of the space, if there is any, and therefore moves the footer to the bottom. */
+}
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background: #f2f2f2;
+  border-bottom: 10px solid #aaa;
+}
+nav{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main{
+  width:70%;
+  max-width: 900px;
+  margin: 2rem auto 1.4rem;
+  line-height: 1.4rem;
+  text-align: justify;
+}
+section{
+  margin-bottom: 4rem;
+  clear:both;
+}
+
+#hero{
+  background-image: url('https://s14.postimg.cc/k5sshcek1/high.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #EC4273;
+  background-position: 50% 0%;
+  height: 25rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#heroText{
+  background: hsla(343, 82%, 59%, 0.8);
+  color: white;
+  margin-right: 10rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#heroText{
+  padding: 0.5rem;
+}
+
+#heroTitle h2{
+  text-align: center;
+  color: white;
+  font-family: Dosis;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top:1rem;
+}
+#heroText p{
+  padding: 0 3rem;
+}
+
+#heroText button{
+  width: 8rem;
+  background: white;
+  color: #EC4273;
+  font-family: inherit;
+  font-weight: bolder;
+  padding: 0.7rem 2rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+  
+}
+
+
+/* FONTS, HEADINGS, LINKS & PARAGRAPHS */
+/* Navigation & links */
+nav a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555;
+  font-size: 1.1rem;
+  font-family: 'Dosis', sans-serif;
+}
+nav a:first-child{ display:none; } /* First one that says 'menu' */
+nav a:hover{
+  color: #EC4273;
+  transition: 0.5s;
+}
+header img{
+  width: 12rem;
+}
